@@ -94,7 +94,7 @@ $(function(){
       $('.slider').bxSlider({
         // 옵션
         mode: "fade", // 효과
-        auto: false, // 자동재생(true/false)
+        auto: true, // 자동재생(true/false)
         pause: 4500, // 대기시간(ms),
         pager: true, // 하단 인디케이터 표시
         controls: false, // 좌우 화살표
