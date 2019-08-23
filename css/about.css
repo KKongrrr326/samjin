@@ -1,0 +1,415 @@
+/* style.css */
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+*/
+/*
+font-color : #4d4d4d;
+*/
+/*
+main-color : #03a665;
+sub-color : #ffc20d;
+*/
+
+/* 초기화 코드 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 100%;
+    color: #4d4d4d;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    background: #03a665;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+header a img {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 50%; top: 15px;
+    transform: translateX(-50%);
+}
+header .find-btn{
+    position: absolute;
+    right: 140px; top: 25px;
+    border: none;
+    background: none;
+    outline: none;
+}
+header .find-btn img {
+    width: 28px;
+    height: 28px;
+}
+header .menu-btn {
+    position: absolute;
+    right: 80px; top: 25px;
+    border: none;
+    background: none;
+    outline: none;
+}
+header .menu-btn img {
+    width: 30px;
+    height: 30px;
+}
+header .lang {
+    position: absolute;
+    top: 50%; left: 80px;
+    transform: translateY(-50%);
+}
+header .lang li {
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+}
+header .lang li a {
+    color: #fff;
+}
+
+
+header .lang span {
+    padding: 0 10px;
+    color: #fff;
+}
+
+/* search-icon */
+.searchtop{
+    width: 100%;
+    height: 120px;
+    opacity: 0;
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    background: #fff;
+    position: fixed;
+    top: 80px;
+    z-index: 99;
+    padding: 20px;
+}
+.searchtop.show{
+    opacity: 1;
+    height: 120px;
+    transition: 0.5s;
+}
+.searchtop-container{
+    position: relative;
+    width: 800px;
+    height: 80px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.inp{
+    display: inline-block;
+    width: 800px;
+    height: 80px;
+    border: 1px solid #03A665;
+    box-sizing: border-box;
+}
+.inp input{
+    width: 600px;
+    height: 78px;
+    border: none;
+    font-size: 1.5em;
+    padding-left: 50px;
+    outline: none;
+}
+.btn{
+    position: absolute;
+    right: 80px; 
+    top: 50%; transform: translateY(-50%);
+    border: none;
+    background: none;
+    outline: none;
+}
+.close{
+    position: absolute;
+    right: 30px;
+    top: 50%; transform: translateY(-50%);
+    border: none;
+    background: none;
+    outline: none;
+}
+button img{
+    width: 30px;
+    height: 30px;
+}
+
+/* main-menu */
+
+.hold {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    opacity: 0;
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    background: #fff;
+    position: fixed;
+    top: 80px;
+    z-index: 99;
+}
+.hold.show {
+    /* display: block; */
+    opacity: 1;
+    height: 300px;
+    transition: 0.5s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#main-menu {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#main-menu .depth1 {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+#main-menu .depth1 > li{
+    float: left;
+    width: 20%;
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+#main-menu .depth1 > li > a {
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#main-menu .depth1 > li > a:hover {
+    border-bottom: 2px solid #03a665;
+}
+
+
+#main-menu .depth2 {
+    height: 220px;
+    margin-top: 25px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+#main-menu .depth2:nth-child(2) {
+    border-right: none;
+}
+#main-menu .depth1 li:last-child .depth2 {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+#main-menu .depth2 li a {
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    padding: 5px 0;
+}
+#main-menu .depth2 li:first-child {
+    padding-top: 20px;
+}
+#main-menu .depth2 li a:hover {
+    color: #03a665;
+    font-weight: bold;
+}
+
+/* visual */
+#visual {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url('../images/about-visual.jpg');
+    margin-top: 80px;
+}
+#visual .container {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+#visual .visual-txt {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#visual .visual-txt h1 {
+    font-size: 42px;
+}
+
+/* sub-menu */
+#sub-menu {
+    background: rgba(255, 193, 13, 0.8);
+    /* border-bottom: 1px solid #ccc; */
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+.sub-container {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+}
+.sub-container li a {
+    width: 20%;
+    height: 50px;
+    /* border: 1px solid #ccc; */
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    border-right: none;
+    font-weight: bold;
+}
+.sub-container li a:hover {
+    /* border-bottom: 2px solid #03a665; */
+    background: #fff;
+    font-weight: bold;
+}
+
+/* greeting */
+#greeting {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url('../images/greeting-img.jpg');
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+#greeting .greeting-txt h2 {
+    font-size: 24px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+#greeting .greeting-txt p {
+    font-size: 28px;
+    color: #fff;
+}
+/* philosophy */
+#contents {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#contents .philosophy {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+#contents .philosophy h2 {
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #03a665;
+}
+#contents .philosophy p {
+    font-size: 28px;
+}
+
+#contents img {
+    width: 1200px;
+    height: 400px;
+}
+#contents .customers {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+#contents .customers img {
+    width: 550px;
+    height: 500px;
+    float: left;
+    margin-right: 100px;
+}
+#contents .customers .customers-txt {
+    padding-top: 30px;
+}
+#contents .customers .customers-txt h3 {
+    font-size: 24px;
+    line-height: 2em;
+    
+}
+#contents .customers .customers-txt span {
+    font-size: 18px;
+}
+#contents .customers .customers-txt p {
+    margin-top: 50px;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    background: #F2F4F6;
+    clear: both;
+    position: relative;
+}
+footer .footer-logo {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 60px; top: 50%;
+    transform: translateY(-50%);
+}
+footer .footer-link {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer .footer-link li {
+    display: inline-block;
+    font-size: 14px;
+}
+footer .footer-link li a {
+    color: #4b4b4b;
+}
+footer .footer-link span {
+    padding: 0 10px;
+}
+footer .footer-info {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+footer .footer-info li {
+    display: inline-block;
+    font-size: 14px;
+    color: #989898;
+}
+
+footer .footer-info span {
+    padding: 0 10px;
+}
+footer .footer-copy {
+    font-size: 11px;
+    padding-top: 10px;
+    color: #989898;
+}
+footer .footer-web {
+    width: 65px;
+    height: 50px;
+    position: absolute;
+    top: 50%; right: 80px;
+    transform: translateY(-50%);
+}

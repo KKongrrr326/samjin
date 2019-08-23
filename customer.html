@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>customer</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index.html</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans|Noto+Sans+KR&display=swap"
+        rel="stylesheet">
+    <!-- 외부 CSS -->
+    <link rel="stylesheet" href="css/customer.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header & nav -->
+    <header>
+        <a href="index.html"><img src="images/header-logo.png" alt="logo"></a>
+        <button class="menu-btn"><img src="images/menu-icon.png" alt=""></button>
+        <button class="find-btn">
+            <img src="images/find.png" alt="find">
+         </button>
+        <ul class="lang">
+            <li><a href="#">KOR</a><span>|</span></li>
+            <li><a href="#">ENG</a></li>
+        </ul>
+    </header>
+    <div class="searchtop">
+        <p class="searchtop-container">
+            <span class="inp">
+                <input 
+                type="text" 
+                name="goods_search_word" 
+                id="goods_search_word" 
+                class="input_txt" 
+                placeholder="검색할 제품명을 입력해 주세요." 
+                onkeyup="enters(function(){ topGoodsSearch(); })"
+                >
+            </span>
+            <button class="btn" onclick="topGoodsSearch()">
+                <img src="images/search.png" alt="검색" class="img-pc">
+            </button>
+            <button class="close" onclick="headSearchFn.close();"><img src="images/close.png" alt="닫기">
+            </button>
+        </p>
+    </div>
+</div>
+    <div class="hold">
+        <nav id="main-menu">
+            <ul class="depth1">
+                <li>
+                    <a href="#">기업정보</a>
+                    <ul class="depth2">
+                        <li><a href="about.html">기업소개</a></li>
+                        <li><a href="#">회사연혁</a></li>
+                        <li><a href="location.html">위치안내</a></li>
+                        <li><a href="#">투자정보</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품정보</a>
+                    <ul class="depth2">
+                        <li><a href="product.html">제품</a></li>
+                        <li><a href="#">신제품소개</a></li>
+                        <li><a href="#">효능별제품안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">연구개발</a>
+                    <ul class="depth2">
+                        <li><a href="#">연구소 소개</a></li>
+                        <li><a href="#">연구소 조직</a></li>
+                        <li><a href="#">R&D비전</a></li>
+                        <li><a href="#">R&D Pipeline</a></li>
+                        <li><a href="#">주요연구성과</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">인재채용</a>
+                    <ul class="depth2">
+                        <li><a href="#">채용제도</a></li>
+                        <li><a href="#">채용뉴스</a></li>
+                        <li><a href="#">입사지원</a></li>
+                        <li><a href="#">입사지원도우미</a></li>
+                        <li><a href="#">전형결과확인</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="customer.html">고객센터</a>
+                    <ul class="depth2">
+                        <li><a href="customer.html">FAQ</a></li>
+                        <li><a href="customer.html">고객지원센터</a></li>
+                        <li><a href="#">뉴스</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+<!-- vigual -->
+<section id="visual">
+        <div class="container">
+            <div class="visual-txt">
+                <h1>고객센터</h1>
+                <p>삼진제약은 언제나 고객님의 작은소리에 귀 기울이고자 합니다.</p>
+            </div>
+        </div>
+    </section>
+    <!-- sub-menu -->
+    <nav id="sub-menu">
+        <div class="sub-container">
+            <ul>
+                <li><a href="customer.html">고객센터</a></li>
+                <li><a href="customer.html">FAQ</a></li>
+                <li><a href="customer.html">고객지원센터</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- sub04-FAQ -->
+    <section id="sub04">
+        <div class="sub04-container">
+            
+            <div class="box1">
+                    <h1 class="cos">CUSTOMER SUPPORT</h1>
+                <div class="customer">
+                <div class="box2">
+                    <h2>고객센터</h2>
+                    <img src="images/Artboard 20 copy.png" alt="">
+                    <h3>평일 오전 08:00 ~ 오후 05:00<br>토, 일요일 및 법정 공휴일,하계휴가 제외</h3>
+                </div>
+                <div class="box3">
+                    <h2>대표번호</h2>
+                    <img src="images/Artboard 20.png" alt="">
+                    <h3>고객상담 : 02-3140-0700</h3>
+                    <h3>제품문의 : 080-082-1234</h3>
+                </div>
+            </div>
+            </div>
+                <div class="faq">
+                    <h1>FAQ</h1>
+                    <dl><div class="dtd">
+                            <dt><span class="sp">Q</span>[웰타민] 웰타민을 인터넷에서 구매할 수 있나요?<span>▼</span></dt>
+                            <dd>약사법 제44조(의약품판매) 제1항의 규정에 의하면 약국개설자(해당 약국에 근무하는 약사 또는 한약사를 포함)가 아니면 의약품을 판매하거나 판매할 목적으로 취득할 수 없다고 규정되어 있습니다. 따라서 일반의약품인 웰타민은 인터넷 등에서 회사가 직접 소비자에게 판매할 수 없습니다. 가까운 약국을 통해서 구입해 주시기 바랍니다.</dd>
+                        </div>
+                        <div class="dtd">
+                            <dt><span class="sp">Q</span>[웰타민] 웰타민을 임산부가 복용해도 괜찮을까요?<span>▼</span></dt>
+                            <dd>웰타민에는 비타민A의 전구물질인 베타카로틴 3mg이 포함되어 있는데, 이는 비타민A 5,000IU에 해당하는 양입니다. 임신 3개월 이내의 초기 임산부 또는 임신하고 있을 가능성이 있는 경우에는 태아의 선천성 기형을 유발할 위험이 있으므로 비타민A 결핍증에 사용하는 경우를 제외하고 하루 5,000IU 이상 섭취하지 않도록 주의하여야 합니다.</dd>
+                        </div>
+                            <div class="dtd">
+                            <dt><span class="sp">Q</span>[웰타민] 코엔자임Q10 (ubidecarenone)이 무엇인가요?<span>▼</span></dt>
+                            <dd>웰타민의 주요성분인 코엔자임Q10은 우리 몸의 거의 모든 곳에 존재하는 성분으로 에너지 생산을 촉진하고 세포내 지질과산화를 방지하여 손상을 막아주는 항산화제입니다. 따라서 노화와 심혈관 질환 등의 질병을 예방하고, 인체에 에너지원으로 작용하는데, 이처럼 체내에서 중요한 역할을 하고 있는 코엔자임Q10은 나이가 들어감에 따라 체내에서 합성능력이 떨어져 피로 및 체력저하, 노화 등의 부족현상이 나타날 수 있습니다.</dd>
+                        </div>
+                            <div class="dtd">
+                            <dt><span class="sp">Q</span>[트레스탄] 트레스탄 캡슐은 어떤 작용으로 식욕을 촉진시키나요?<span>▼</span></dt>
+                            <dd>트레스탄 캡슐은 네 가지 성분의 복합제로 각 성분은 식욕촉진 및 성장증진을 적절히 도와줍니다. 
+                                    주작용을 하는 Cyproheptadine orotate의 경우 포만중추를 억제하여 식욕을 증가시키고 칼로리 섭취를 늘리며, 신체방어력을 높여주는 역할을 합니다. 
+                                    Dl-Carnitine chloride(Vit.B)는 소화관에서 분비를 촉진하고 연동운동을 증가시켜 줍니다. 
+                                    L-Lysine HCl은 체외에서 공급되어야 하는 필수아미노산으로 신진대사를 원활히 해주며 질소평형, 식욕촉진, 체중증가에 필요한 성분입니다. 
+                                    Cyanocobalamine(Vit.B)은 핵산의 합성을 돕고 항빈혈인자로 작용하며 아미노산 대사에 보조 효소로서 관여합니다. </dd>
+                            </div>
+                             <div class="dtd">
+                            <dt><span class="sp">Q</span>[트레스탄] 트레스탄 캡슐 복용시 주의해야 할 환자가 있나요?<span>▼</span></dt>
+                            <dd>녹내장 환자, 요저류의 소인이 있는 환자는 트레스탄 캡슐을 복용할 때에 주의해야 한다고 알려져 있습니다. 고령자 및 쇠약자, 신생아는 신체의 대사기능 저하 상태에 대한 우려가 있을 수 있으므로 복용 시 전문가와 상담해 주시기 바랍니다.</dd>
+                        </div>
+                        </dl>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <img class="footer-logo" src="images/footer-logo.png" alt="">
+        <div class="footer-link">
+            <ul>
+                <li><a href="#">개인정보처리방침</a><span>|</span></li>
+                <li><a href="#">이용약관</a><span>|</span></li>
+                <li><a href="#">이메일무단수집거부</a><span>|</span></li>
+                <li><a href="#">CONTACT US</a><span>|</span></li>
+                <li><a href="#">SITEMAP</a></li>
+            </ul>
+            <div class="footer-info">
+                <ul>
+                    <li>서울특별시 마포구 와우산로 121(우)04054<span>|</span></li>
+                    <li>전화번호 : 02)3140-0700, 080-082-1234<span>|</span></li>
+                    <li>팩스번호 : 02)392-5312</li>
+                </ul>
+            </div>
+            <p class="footer-copy">COPYRIGHT©2013 SAMJINPHARM ALL RIGHTS RESERVED.</p>
+            <img class="footer-web" src="images/web.png" alt="">
+    </footer>
+
+</body>
+
+</html>
+</body>
+</html>
